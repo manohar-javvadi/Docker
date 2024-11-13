@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Gallery</title>
+  <title>Contact Us</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -16,19 +16,32 @@
       padding: 1rem;
       text-align: center;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
+    form {
+      max-width: 600px;
+      margin: 2rem auto;
       padding: 20px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
     }
-    .gallery img {
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input, textarea {
       width: 100%;
-      border-radius: 8px;
-      transition: transform 0.3s ease-in-out;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
-    .gallery img:hover {
-      transform: scale(1.05);
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
     footer {
       background-color: #333;
@@ -41,17 +54,23 @@
 <body>
 
   <header>
-    <h1>Our Image Gallery</h1>
+    <h1>Contact Us</h1>
   </header>
 
-  <div class="gallery">
-    <img src="https://via.placeholder.com/300x200" alt="Image 1">
-    <img src="https://via.placeholder.com/300x200" alt="Image 2">
-    <img src="https://via.placeholder.com/300x200" alt="Image 3">
-    <img src="https://via.placeholder.com/300x200" alt="Image 4">
-    <img src="https://via.placeholder.com/300x200" alt="Image 5">
-    <img src="https://via.placeholder.com/300x200" alt="Image 6">
-  </div>
+  <main>
+    <form action="#" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
 
   <footer>
     <p>&copy; 2024 Your Company</p>
