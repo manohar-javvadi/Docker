@@ -1,2 +1,61 @@
-<h1>Hello all, We have deployed an NGINX Webserver using a Docker file</h1>
-<h2>Docker is very useful when we want to deploy multiple applications in multiple containers</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Image Gallery</h1>
+  </header>
+
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300x200" alt="Image 1">
+    <img src="https://via.placeholder.com/300x200" alt="Image 2">
+    <img src="https://via.placeholder.com/300x200" alt="Image 3">
+    <img src="https://via.placeholder.com/300x200" alt="Image 4">
+    <img src="https://via.placeholder.com/300x200" alt="Image 5">
+    <img src="https://via.placeholder.com/300x200" alt="Image 6">
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Your Company</p>
+  </footer>
+
+</body>
+</html>
